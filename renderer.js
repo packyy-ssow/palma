@@ -6,9 +6,6 @@
  * to expose Node.js functionality from the main process.
  */
 
-// Array to store suggestions
-const suggestions = [];
-
 // Wait for DOM to be loaded
 window.addEventListener('DOMContentLoaded', () => {
   const submitButton = document.getElementById('submit-suggestion');
@@ -20,9 +17,6 @@ window.addEventListener('DOMContentLoaded', () => {
     const suggestion = suggestionInput.value.trim();
     
     if (suggestion) {
-      // Add suggestion to array
-      suggestions.push(suggestion);
-      
       // Create and append new list item
       const li = document.createElement('li');
       li.textContent = suggestion;
