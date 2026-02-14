@@ -13,6 +13,18 @@
     Chromium <span id="chrome-version"></span>,
     and Electron <span id="electron-version"></span>.
 
+    <div class="suggestions-container">
+      <h2>Jakékoli Nápady (Your Suggestions)</h2>
+      <div class="input-section">
+        <textarea id="suggestion-input" placeholder="Napište svůj nápad... (Write your idea...)" rows="3"></textarea>
+        <button id="submit-suggestion">Přidat nápad (Add Suggestion)</button>
+      </div>
+      <div class="suggestions-list">
+        <h3>Submitted Suggestions:</h3>
+        <ul id="suggestions-ul"></ul>
+      </div>
+    </div>
+
     <!-- You can also require other files to run in this process -->
     <script src="./renderer.js"></script>
   </body>
